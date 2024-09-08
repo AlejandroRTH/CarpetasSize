@@ -1,0 +1,10 @@
+# Si se realizo un pequena modificacion
+
+git add <nuevo archivo> 
+git commit --amend --no-edit
+git push --force
+
+git push origin :old-branch
+git push origin new-branch
+git push --set-upstream origin new-branch
+

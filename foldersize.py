@@ -58,7 +58,7 @@ def analyze_folder_structure(root_folder):
 clscr()
 
 # Ruta a la carpeta que deseas analizar
-root_folder = r"C:\ProgramData"  # Cambia esto a la ruta de la carpeta que deseas analizar
+root_folder = r"C:\\ProgramData"  # Cambia esto a la ruta de la carpeta que deseas analizar
 
 # Análisis de la carpeta
 df = analyze_folder_structure(root_folder)
