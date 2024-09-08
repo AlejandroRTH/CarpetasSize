@@ -21,10 +21,11 @@ def analyze_folder_structure(root_folder):
     
     df = pd.DataFrame(folder_data)
     df['Tamaño (MB)'] = df['Tamaño (Bytes)'] / (1024 * 1024)
+    df['Tamaño (GB)'] = df['Tamaño (MB)'] / 1024
     return df
 
 # Ruta a la carpeta que deseas analizar
-root_folder = "c:\gestionrecibos"  # Cambia esto a la ruta de la carpeta que deseas analizar
+root_folder = "C:\ProgramData\Microsoft\VisualStudio\Packages"  # Cambia esto a la ruta de la carpeta que deseas analizar
 
 # Análisis de la carpeta
 df = analyze_folder_structure(root_folder)
