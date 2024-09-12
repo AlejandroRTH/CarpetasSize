@@ -21,7 +21,7 @@ def analyze_folder_structure(root_folder):
     large_folders = []
     for folder in root_subfolders:
         folder_size = get_folder_size(folder)
-        if folder_size > 5 * 1024 * 1024 * 1024:  # 5 GB en bytes
+        if folder_size > 1 * 1024 * 1024 * 1024:  # 5 GB en bytes
             large_folders.append(folder)
     
     # Analizar solo las carpetas grandes
@@ -58,7 +58,7 @@ def analyze_folder_structure(root_folder):
 clscr()
 
 # Ruta a la carpeta que deseas analizar
-root_folder = r"C:\\ProgramData"  # Cambia esto a la ruta de la carpeta que deseas analizar
+root_folder = r"C:\\Windows"  # Cambia esto a la ruta de la carpeta que deseas analizar
 
 # Análisis de la carpeta
 df = analyze_folder_structure(root_folder)
